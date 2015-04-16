@@ -1,0 +1,119 @@
+body {
+	font-family: 'Lato', sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	height: 100vh; /* New in CSS3 - 100% of the viewport height */
+
+	margin: 0;
+}
+
+/* Some areas use common colors */
+i, header a:hover {
+	color: #3dbae6;
+}
+header, header a {
+	color: #fff;
+}
+
+/* Styles for the top half of the page */
+header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	background-color: #3dbae6;
+	background: linear-gradient(150deg, rgb(183,222,237) 0%,
+	                                    rgb(33,180,226) 50%,
+	                                    rgb(183,222,237) 100%);
+
+	justify-content: center;
+	text-align: center;
+}
+header h1 {
+	font-size: 3em;
+	margin: 0;
+}
+header p {
+	font-weight: 300;
+	margin-top: 0;
+}
+#resumeLink {
+	cursor: pointer;
+
+	margin: 0 auto;
+	padding: 3px;
+	width: 100px;
+
+	border: 1px solid #fff;
+	border-radius: 15px;
+
+	text-decoration: none;
+
+	transition: 0.3s;
+}
+header a:hover {
+	background-color: #fff;
+}
+
+/* Styles for the bottom half */
+#content {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	align-self: center;
+	justify-content: center;
+}
+
+#connect {
+	display: flex;
+	flex-direction: row;
+}
+
+i {
+	margin: 0 .2em;
+
+	transition: 0.3s;
+}
+
+/* Resume */
+#overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background-color: rgba(0, 0, 0, 0.5);
+
+	cursor: pointer;
+	display: block;
+}
+#overlay i {
+	color: #fff;
+
+	position: fixed;
+	top: 3vh;
+	right: 3vw;
+}
+#resume {
+	position: fixed;
+	top: 10vh;
+	left: 10vw;
+	height: 90vh;
+	right: 10vw;
+
+	border: 1px solid #3dbae6;
+	box-shadow: 0 0 7px #000;
+
+	background-color: #fff;
+
+	transition: 1s;
+}
+#overlay.hidden {
+	display: none;
+}
+#resume.hidden {
+	top: 200vh;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>[Your Tagline Here]</title>
+  <meta charset='UTF-8'>
+
+  <!-- Use Font Awesome for icons -->
+  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+  <!-- Use Google Web Fonts for fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+  <!-- Load our own styles -->
+  <link rel='stylesheet' href='/global.css'>
+</head>
+<body>
+  <header>
+    <h1>[Your Name]</h1>
+    <p>[A line or two about yourself]</p>
+    <div id='resumeLink'>Résumé</div>
+  </header>
+  <section id='content'>
+    <section id='connect'>
+      <a href='[Link to your github account]' target='_blank'>
+        <i class="fa fa-4x fa-github"></i>
+      </a>
+      <a href='[Link to your Twitter account]' target='_blank'>
+        <i class="fa fa-4x fa-twitter"></i>
+      </a>
+      <a href='[Link to your LinkedIn account]' target='_blank'>
+        <i class="fa fa-4x fa-linkedin"></i>
+      </a>
+      <a href='[mailto: your@email.address]' target='_blank'>
+        <i class="fa fa-4x fa-envelope-o"></i>
+      </a>
+    </section>
+  </section>
+
+  <!-- For displaying the resume in-page -->
+  <div id='overlay' class='hidden'>
+    <i class='fa fa-2x fa-times-circle'></i>
+  </div>
+  <section id='resume' class='hidden'>
+    <object data='Resume.pdf' type='application/pdf' width='100%' height='100%'>
+      <p>
+        It appears you don't have a PDF plugin for this browser.
+        No problem. You can <a href='Resume.pdf'>click here to
+        download the PDF file.</a>
+      </p>
+    </object>
+  </section>
+
+  <!-- Load our scripts -->
+  <script src='/resume.js'></script>
+</body>
+</html>
